@@ -1,1 +1,2 @@
+rootProject.name = 'latebras'
 include 'backend', 'web'

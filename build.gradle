@@ -1,6 +1,16 @@
 description = 'The electronic hiding place'
 version = '1.0'
 
+subprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+subprojects {
+    version = '1.0'
+}
+
 Closure cl = { task -> println "I'm $task.project.name" }
 task('hello').doLast(cl)
 project(':backend') {
