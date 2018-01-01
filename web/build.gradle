@@ -1,4 +1,8 @@
+description = "The electronic hiding place's web UI"
 
+dependencies {
+    compile 'com.google.guava:guava:23.0'
 
-hellosub.doLast { println "I'm also subconfigured" }
+    testCompile 'junit:junit:4.12'
+}
 

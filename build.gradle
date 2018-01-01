@@ -1,6 +1,10 @@
 description = 'The electronic hiding place'
 version = '1.0'
 
+task gradleHome {
+    println gradle.gradleHomeDir
+}
+
 subprojects {
   repositories {
     jcenter()
