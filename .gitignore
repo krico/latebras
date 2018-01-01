@@ -1,9 +1,12 @@
 .idea
 hs_err_pid*
 
+# NODE and NPM -------
+node_modules/
+
 # GRADLE -------
 .gradle
-/build/
+build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
