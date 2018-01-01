@@ -1,0 +1,4 @@
+
+
+hellosub.doLast { println "- I'm subconfigured" }
+

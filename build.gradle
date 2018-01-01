@@ -1,0 +1,37 @@
+description = 'The electronic hiding place'
+version = '1.0'
+
+Closure cl = { task -> println "I'm $task.project.name" }
+task('hello').doLast(cl)
+project(':backend') {
+    task('hello').doLast(cl)
+}
+project(':web') {
+    task('hello').doLast(cl)
+}
+
+allprojects {
+  task helloall {
+    doLast { task -> println "I'm $task.project.name" }
+  }
+}
+
+subprojects {
+  helloall {
+    doLast { println "- I depend on root" }
+  }
+}
+
+project(":web").helloall {
+  doLast {
+    println "- I'm web"
+  }
+}
+
+allprojects {
+  task hellosub {
+    doLast { task -> println "I'm $task.project.name" }
+  }
+}
+
+
