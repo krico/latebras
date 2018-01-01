@@ -1,0 +1,14 @@
+{
+  "name": "latebras-web",
+  "version": "0.0.0",
+  "description": "The electronic hiding place's web UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Asmussen <github@cwa.to> (http://github.com/krico)",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "firebaseui": "^2.5.1"
+  }
+}
